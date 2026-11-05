@@ -5,18 +5,22 @@
 <meta name="description" content="Sahil Jain — Product Lead building AI and data products.">
 <title>Sahil Jain | AI Product Lead</title>
 <style>
-:root{--ink:#172033;--muted:#647089;--paper:#f5f7fb;--card:#fff;--line:#e5eaf2;--accent:#5b6df6;--navy:#101827}
+:root{--ink:#172033;--muted:#647089;--paper:#f5f7fb;--card:#fff;--line:#e5eaf2;--accent:#e87118;--navy:#101827}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}
 nav{position:sticky;top:0;z-index:5;background:#101827f2;color:#d5dbea;display:flex;justify-content:space-between;align-items:center;padding:17px max(24px,calc((100% - 1040px)/2));backdrop-filter:blur(12px)}
-nav strong{color:white;font-size:1.1rem}nav strong span{color:#9da8ff}nav div{display:flex;gap:22px;font-size:.88rem}
-.hero{background:radial-gradient(ellipse at 80% 15%,#596af65a,transparent 38%),linear-gradient(130deg,#101827,#18263a);color:white;padding:88px max(24px,calc((100% - 1040px)/2)) 100px}
-.kicker{color:#aeb8ff;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:800}
+nav strong{color:white;font-size:1.1rem;white-space:nowrap;letter-spacing:-.035em}nav strong span{color:#ffb06c}nav div{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:.85rem}nav div a{padding:7px 11px;border-radius:100px;transition:background .2s,color .2s}nav div a:hover{background:#ffffff16;color:#fff}nav .nav-feature{border:1px solid #ffffff35;color:#ffe0c6}nav .nav-feature:hover{background:#ed761d;color:white;border-color:#ed761d}
+.hero{background:radial-gradient(ellipse at 80% 15%,#f58a3755,transparent 38%),linear-gradient(130deg,#101827,#18263a);color:white;padding:88px max(24px,calc((100% - 1040px)/2)) 100px}
+.kicker{color:#ffc391;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:800}
 h1{font-size:clamp(3.3rem,8vw,6rem);letter-spacing:-.07em;line-height:1;margin:18px 0}
-.hero h1 span{color:#9da8ff}.role{font-size:clamp(1.1rem,2.5vw,1.5rem);color:#d2d9e6}
+.hero h1 span{color:#ffb06c}.role{font-size:clamp(2.35rem,5.5vw,4.3rem);font-weight:750;letter-spacing:-.055em;line-height:1.12;max-width:860px;color:#fff;margin-top:22px}
 .hero p{max-width:720px;color:#aeb9ca;margin:24px 0 30px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:11px 18px;border-radius:30px;font-weight:700;font-size:.9rem;border:1px solid #ffffff55;color:white}.primary{background:var(--accent);border-color:var(--accent)}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:14px;font-weight:700;font-size:.9rem;border:1px solid #ffffff50;color:white;background:#ffffff0d;backdrop-filter:blur(8px);transition:transform .22s ease,background .22s ease,box-shadow .22s ease,border-color .22s ease}.btn:hover{transform:translateY(-3px);background:#ffffff1d;color:#fff;border-color:#ffffff90;box-shadow:0 12px 25px #0003}.btn:focus-visible,nav a:focus-visible{outline:3px solid #ffb66e;outline-offset:3px}.primary{background:#e87118;border-color:#e87118;box-shadow:0 8px 24px #e8711840}.primary:hover{background:#ff892b;border-color:#ff892b}
 .meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:#aeb9ca;font-size:.9rem}
+@keyframes enterUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+@keyframes glowIn{from{opacity:0;filter:blur(8px);transform:translateY(16px)}to{opacity:1;filter:blur(0);transform:translateY(0)}}
+.hero .kicker{animation:enterUp .7s .05s both}.hero .role{animation:glowIn .85s .16s both}.hero p{animation:enterUp .75s .3s both}.hero .actions{animation:enterUp .75s .43s both}.hero .meta{animation:enterUp .75s .55s both}.stat{transition:transform .25s ease,box-shadow .25s ease}.stat:hover{transform:translateY(-5px);box-shadow:0 20px 42px #1b274320}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 main{max-width:1040px;margin:auto;padding:0 24px 70px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-34px;position:relative}
 .stat,.panel,.job,.skill,.edu{background:var(--card);border:1px solid var(--line);border-radius:17px;box-shadow:0 15px 45px #1b274311}
 .stat{padding:20px 23px}.stat b{display:block;font-size:1.8rem;letter-spacing:-.05em}.stat small{color:var(--muted)}
@@ -25,25 +29,46 @@ h2{font-size:clamp(1.9rem,4vw,2.5rem);letter-spacing:-.05em;line-height:1.15;mar
 .panel{padding:27px 30px;color:#4d5970;font-size:1.04rem}.panel strong{color:var(--ink)}
 .timeline{display:grid;gap:15px}.job{padding:25px 28px}.jobhead{display:flex;justify-content:space-between;gap:20px}.company{font-size:1.2rem;font-weight:800}.title{font-weight:650;color:#43506a}.date,.place{font-size:.84rem;color:var(--muted)}
 ul{padding-left:20px;color:#536078;margin:15px 0 0}li{padding-left:4px;margin:7px 0}li::marker{color:var(--accent)}
-.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.tag{font-size:.75rem;font-weight:700;color:#4858c5;background:#eef1ff;border-radius:30px;padding:4px 10px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.tag{font-size:.75rem;font-weight:700;color:#a84e0d;background:#fff0e2;border-radius:30px;padding:4px 10px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill,.edu{padding:21px}.skill h3,.edu h3{margin:0 0 8px}.skill p,.edu p{color:var(--muted);font-size:.9rem;margin:0}
 .edugrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.project p{margin:0 0 9px}.project p:last-child{margin:0}
 footer{text-align:center;background:var(--navy);color:#aeb9ca;padding:32px 20px;font-size:.88rem}footer strong{color:white}
-@media(max-width:700px){nav div a:not(:last-child){display:none}.hero{padding-top:68px;padding-bottom:78px}.stats,.grid,.edugrid{grid-template-columns:1fr}.stat{padding:15px 20px}.job{padding:21px}.jobhead{display:block}.date{margin-top:6px}section{padding-top:55px}.panel{padding:22px}}
+@media(max-width:700px){nav{align-items:flex-start;gap:12px;flex-direction:column}nav div{gap:4px}nav div a{font-size:.77rem;padding:5px 8px}.hero{padding-top:68px;padding-bottom:78px}.grid,.edugrid{grid-template-columns:1fr}.stat{padding:15px 20px}.job{padding:21px}.jobhead{display:block}.date{margin-top:6px}section{padding-top:55px}.panel{padding:22px}}
 @media print{nav,.actions,footer{display:none}.hero{background:white;color:var(--ink);padding:25px 0}.hero p,.role,.meta{color:#444}main{padding:0}.stats{margin:0}section{padding-top:25px}.stat,.panel,.job,.skill,.edu{box-shadow:none;break-inside:avoid}}
+
+/* Compact two-row navigation, with contact buttons at the top */
+.site-nav{padding:12px 24px}.nav-inner{width:min(1200px,100%);margin:auto;display:flex;gap:22px;align-items:flex-start;justify-content:space-between}
+.site-nav .wordmark{padding-top:9px;flex:none}.nav-content{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:0}
+.site-nav .nav-links{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:6px;align-items:center}
+.site-nav .nav-links a{display:inline-flex;align-items:center;padding:8px 11px;white-space:nowrap;border-radius:12px;font-size:.79rem;font-weight:650;transition:background .2s,transform .2s,box-shadow .2s}
+.site-nav .nav-links a:hover{transform:translateY(-2px);background:#ffffff1d}
+.site-nav .nav-links .nav-feature{border:1px solid #ffffff30;background:#ffffff0b;color:#ffe3cd}
+.site-nav .nav-links .nav-contact{background:#e87118;color:#fff;border-color:#e87118;box-shadow:0 5px 18px #e871183d}
+.site-nav .nav-links .nav-contact:hover{background:#ff892b}
+.nav-subline{display:flex;gap:18px;justify-content:flex-end;color:#b2bfd0;font-size:.75rem;letter-spacing:.01em;padding-right:4px}
+/* Rotating stats: one card appears, pixel-dissolves, then the next */
+.stats{grid-template-columns:minmax(0,1fr);max-width:390px;min-height:112px}
+.stats .stat{grid-area:1/1;position:relative;overflow:hidden;isolation:isolate;opacity:0;visibility:hidden;transform:translateY(9px);pointer-events:none}
+.stats .stat.active{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .35s ease,transform .35s ease;pointer-events:auto}
+.pixel-overlay{position:absolute;inset:0;display:grid;grid-template-columns:repeat(14,1fr);grid-template-rows:repeat(6,1fr);pointer-events:none;z-index:2;border-radius:inherit;overflow:hidden}
+.pixel-overlay i{display:block;background:#f5a260;opacity:1;animation:pixelVanish .7s ease-in forwards;animation-delay:var(--pixel-delay)}
+.pixel-overlay i:nth-child(3n){background:#e87118}.pixel-overlay i:nth-child(5n){background:#ffcc9d}.pixel-overlay i:nth-child(7n){background:#f7b783}
+@keyframes pixelVanish{0%{opacity:1;transform:scale(1)}65%{opacity:1}100%{opacity:0;transform:scale(.15) translateY(-13px)}}
+.stats .stat.dissolve{opacity:0;transform:translateY(-7px);transition:opacity .55s ease,transform .55s ease}
+@media(max-width:900px){.nav-inner{flex-direction:column;gap:8px}.site-nav .wordmark{padding-top:0}.nav-content{align-items:flex-start}.site-nav .nav-links{justify-content:flex-start}.nav-subline{justify-content:flex-start}}
+@media(max-width:700px){.site-nav{padding:12px 16px}.site-nav .nav-links{gap:5px}.site-nav .nav-links a{font-size:.72rem;padding:7px 9px}.nav-subline{flex-wrap:wrap;gap:4px 14px}.hero{padding-top:62px}}
+@media(prefers-reduced-motion:reduce){.stats .stat{transition:none!important}.pixel-overlay{display:none}}
+@media print{.pixel-overlay{display:none}.stats{max-width:none;grid-template-columns:repeat(3,1fr)}.stats .stat{grid-area:auto;opacity:1;visibility:visible;transform:none}}
 </style></head>
 <body>
-<nav><strong>SJ<span>.</span></strong><div><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Expertise</a><a href="#education">Education</a><a href="mailto:sahiljain.ml@gmail.com">Contact ↗</a></div></nav>
-<header class="hero">
+<nav class="site-nav"><div class="nav-inner"><a class="wordmark" href="#top"><strong>Sahil Jain<span>.</span></strong></a><div class="nav-content"><div class="nav-links"><a href="#experience">Experience</a><a href="#skills">Expertise</a><a href="#education">Education</a><a class="nav-feature" href="https://substack.com/@ai4smbs" target="_blank" rel="noopener noreferrer">AI for SMBs ↗</a><a class="nav-feature" href="https://www.jobzero.app" target="_blank" rel="noopener noreferrer">Side Project ↗</a><a class="nav-feature" href="https://www.linkedin.com/in/sahiljaina" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="nav-feature" href="https://github.com/07jsahil" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="nav-feature nav-contact" href="mailto:sahiljain.ml@gmail.com">Get in touch ↗</a></div><div class="nav-subline"><span>⌖ Santa Clara, California</span><span>AI &amp; Data Product Leadership</span></div></div></div></nav>
+<header class="hero" id="top">
 <div class="kicker">Product leadership · AI &amp; data</div>
-<h1>Sahil Jain<span>.</span></h1><div class="role">Building useful AI products from real customer needs.</div>
+<div class="role">Building useful AI products from real customer needs.</div>
 <p>Product lead with 9+ years across software engineering, analytics and AI products, nearly seven of them at Google. I combine an engineer’s hands-on approach with customer discovery, usage data and product strategy.</p>
-<div class="actions"><a class="btn primary" href="mailto:sahiljain.ml@gmail.com">Get in touch ↗</a><a class="btn" href="https://www.linkedin.com/in/sahiljaina" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="https://github.com/07jsahil" target="_blank" rel="noopener">GitHub ↗</a><button class="btn" onclick="window.print()" style="background:none;cursor:pointer">Print resume ↓</button></div>
-<div class="meta"><span>⌖ Santa Clara, California</span><a href="mailto:sahiljain.ml@gmail.com">✉ sahiljain.ml@gmail.com</a></div>
 </header>
 <main>
 <div class="stats"><div class="stat"><b>9+ years</b><small>Product, engineering &amp; analytics</small></div><div class="stat"><b>3× growth</b><small>Weekly active users for an AI assistant</small></div><div class="stat"><b>100+ users</b><small>Weekly users of an AI data agent</small></div></div>
-<section id="about"><div class="kicker2">A little about me</div><h2>Strategy meets building.</h2><div class="panel">I’m an engineer by training and a product leader by practice. I build and ship AI-powered tools, turn sales-team needs into product roadmaps, and use customer discovery and product data to make better decisions. My work spans <strong>AI agents, evaluation systems, analytics, go-to-market strategy and product adoption</strong>—with a focus on making complex technology genuinely useful.</div></section>
 <section id="experience"><div class="kicker2">Career journey</div><h2>Experience</h2><div class="timeline">
 <article class="job"><div class="jobhead"><div><div class="company">Google</div><div class="title">Product Lead, AI &amp; Data Solutions</div><div class="place">San Francisco Bay Area</div></div><div class="date">Nov 2025 – Present</div></div><ul><li>Built automated evaluations that test a CRM Assistant against real evaluation cases using Playwright, catching regressions before launches and cutting manual feature review by more than 50%.</li><li>Ship features for an AI assistant used by Google’s SMB ads sellers to organize client work, analyze usage and ROI data, and take agentic actions such as generating slides or filing cases.</li><li>Grew weekly active users 3× and increased queries and actions per user per day; lead customer discovery and go/no-go decisions for feature launches.</li><li>Translate sales-team needs into the AI product roadmap and drive go-to-market and adoption across product, business, strategy and leadership teams.</li></ul><div class="tags"><span class="tag">AI assistant</span><span class="tag">Product strategy</span><span class="tag">Playwright evals</span><span class="tag">GTM</span></div></article>
 <article class="job"><div class="jobhead"><div><div class="company">Google</div><div class="title">AI Products, GTM — Google Customer Solutions</div></div><div class="date">May 2023 – Nov 2025</div></div><ul><li>Built and shipped an AI data-analysis agent with Google Cloud engineers, translating plain-language questions about ads data into insights and charts. It applies business context, asks clarifying questions and verifies answers against source-of-truth metrics; reached 100+ weekly active users.</li><li>Built a cloud-based LLM tool identifying product-upsell leads from historical sales conversations, combining text data with revenue and churn signals.</li><li>Led SMB Ads go-to-market initiatives across 5+ product, engineering and sales teams; framed senior-leadership decisions around unknowns and risks.</li><li>Served as interim lead for a team of four through the peak business-planning cycle.</li></ul><div class="tags"><span class="tag">LLM applications</span><span class="tag">AI agents</span><span class="tag">Customer insights</span><span class="tag">Leadership</span></div></article>
@@ -62,5 +87,37 @@ footer{text-align:center;background:var(--navy);color:#aeb9ca;padding:32px 20px;
 </div></section>
 <section id="projects"><div class="kicker2">Beyond the day job</div><h2>Projects &amp; research</h2><div class="panel project"><p>Published a paper on UDP-based file transfer in the <em>International Journal of CSIT</em> (Atos internship, 2014).</p><p>Co-built a music classifier using MFCC features to predict the genre and mood of a track.</p></div></section>
 </main>
-<footer><strong>Sahil Jain</strong> · Product leadership for AI &amp; data products<br><a href="mailto:sahiljain.ml@gmail.com">sahiljain.ml@gmail.com</a> · <a href="https://www.linkedin.com/in/sahiljaina">LinkedIn</a> · <a href="https://github.com/07jsahil">GitHub</a></footer>
+<footer><strong>Sahil Jain</strong> · Product leadership for AI &amp; data products<br><a href="https://www.linkedin.com/in/sahiljaina">LinkedIn</a> · <a href="https://github.com/07jsahil">GitHub</a></footer>
+<script>
+(() => {
+  const cards = [...document.querySelectorAll('.stats .stat')];
+  if (!cards.length) return;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let index = 0;
+  let timers = [];
+  const schedule = (fn, ms) => timers.push(setTimeout(fn, ms));
+  const clearTimers = () => { timers.forEach(clearTimeout); timers = []; };
+  function showCard() {
+    cards.forEach(c => { c.classList.remove('active','dissolve'); c.querySelector('.pixel-overlay')?.remove(); });
+    const card = cards[index];
+    card.classList.add('active');
+    if (reduced.matches) return;
+    const overlay = document.createElement('span');
+    overlay.className = 'pixel-overlay';
+    overlay.setAttribute('aria-hidden','true');
+    for (let i = 0; i < 84; i++) {
+      const pixel = document.createElement('i');
+      const col = i % 14, row = Math.floor(i / 14);
+      pixel.style.setProperty('--pixel-delay', (col * 20 + row * 23 + (i * 37) % 90) + 'ms');
+      overlay.appendChild(pixel);
+    }
+    card.appendChild(overlay);
+    schedule(() => overlay.remove(), 1250);
+    schedule(() => card.classList.add('dissolve'), 2700);
+    schedule(() => { index = (index + 1) % cards.length; showCard(); }, 3300);
+  }
+  reduced.addEventListener('change', () => { clearTimers(); showCard(); });
+  showCard();
+})();
+</script>
 </body></html>
